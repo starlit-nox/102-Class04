@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>      
+    <title>Login</title>
+    <link href="css\signup.css" rel="stylesheet" type="text/css">
+<body>
+
+    <div style="margin-top: -703px; margin-left: 1250px; position: absolute;">
+        <!-- Sign up button -->
+        <p>Need an account? &nbsp;
+            <button class="signup" id='signup' onclick="document.getElementById('id02').style.display='block'" style="width:auto; height: 6.1vh;">
+                Sign Up
+            </button>
+        </p>
+    </div>
+
+    <!-- The Sign Up Modal-->
+    <div id="id02" class="modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content2">
+            <div class="container3">
+                <h1 style="color: black;" class="signup">Sign Up</h1>
+                <p style="color: black;">Please fill in this form to create an account.</p>
+                <hr>
+                <label for="firstName"><b style="color: black;">First Name</b></label>
+                <input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required>
+
+                <label for="lastName"><b style="color:black
+                ">Last Name</b></label>
+                <input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username2" placeholder="Enter Username" name="username" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" id="email" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="password2" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-confirm">
+                    <b>Re-type Password</b>
+                </label>
+                <input type="password" id="cfmpassword2" placeholder="Confirm Password" name="psw-confirm" required>
+
+                <br>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                    <button type="submit" class="signupbtn" onclick="signUp()">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
