@@ -34,9 +34,15 @@ function userLogin() {
 }
 </script>
 
-    <button onclick="Signup(signup.html)">
+    <button onclick="userSignup(signup.html)">
       Sign Up
     </button>
+
+    <script>
+      function userSignup() {
+        window.action=("signup.html")
+      }
+      </script>
 
     <button onclick="Home()">
       Home
