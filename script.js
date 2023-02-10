@@ -24,7 +24,7 @@ function People() {
     confirm("Please don't.")
   }
 
-  function signupPage() {
+  function userLogin() {
     location.replace("https://www.https://mock-website.scandinavian-cl.repl.co/.com")
   }
 
