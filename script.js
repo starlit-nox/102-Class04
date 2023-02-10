@@ -1,6 +1,6 @@
 
 function userLogin() {
-  location.replace("https://www.https://mock-website.scandinavian-cl.repl.co/.com")
+  location.replace("https://crazyballadventure.github.io/mock-website/")
 }
 
   function signup() {
