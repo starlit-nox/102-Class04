@@ -19,9 +19,11 @@ function People() {
     confirm("Please don't.")
   }
 
-  function signup(){
-    window.location="signup.html";
-}
+document.getElementById("signUpButton").addEventListener("click",gotoURL)
+
+  function gotoURL() (
+    window.location.assign("signup.html")
+  )
 
 function signUp() {
   if (document.getElementById("password2").value == document.getElementById("cfmpassword2").value) {
