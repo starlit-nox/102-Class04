@@ -16,14 +16,8 @@ function People() {
   }
 
   function Contact() {
-    confirm("Please don't.")
+    confirm("Please don't. Have a problem? Too bad.")
   }
-
-document.getElementById("signUpButton").addEventListener("click",gotoURL)
-
-  function gotoURL() (
-    window.location.assign("signup.html")
-  )
 
 function signUp() {
   if (document.getElementById("password2").value == document.getElementById("cfmpassword2").value) {
@@ -31,7 +25,6 @@ function signUp() {
       users.firstName = document.getElementById("firstName").value;
       users.lastName = document.getElementById("lastName").value;
       users.username2 = document.getElementById("username2").value;
-      users.email = document.getElementById("email").value;
       users.password2 = document.getElementById("password2").value;
 
 
@@ -42,9 +35,10 @@ function signUp() {
       postUser.setRequestHeader("Content-Type", "application/json");
 
       // Convert the data in "users" object to JSON format before sending to the server.
+      postUser.open('GET', "https://crazyballadventure.github.io/mock-website/")
       postUser.send(JSON.stringify(users));
   }
   else {
-      alert("Password column and Confirm Password column doesn't match!")
+      alert("Password and Confirm Password doesn't match!")
   }
 }
