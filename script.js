@@ -30,13 +30,12 @@ function signUp() {
 
       var postUser = new XMLHttpRequest(); // new HttpRequest instance to send user details
 
-      postUser.open("POST", "/users", true); //Use the HTTP POST method to send data to server
+      postUser.open('GET', "https://crazyballadventure.github.io/mock-website/"); //Use the HTTP POST method to send data to server
 
       postUser.setRequestHeader("Content-Type", "application/json");
 
       // Convert the data in "users" object to JSON format before sending to the server.
-      postUser.open('GET', "https://crazyballadventure.github.io/mock-website/")
-      postUser.send(JSON.stringify(users));
+      postUser.send();
   }
   else {
       alert("Password and Confirm Password doesn't match!")
