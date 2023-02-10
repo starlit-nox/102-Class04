@@ -24,6 +24,10 @@ function People() {
     confirm("Please don't.")
   }
 
+  function signupPage() {
+    location.replace("https://www.https://mock-website.scandinavian-cl.repl.co/.com")
+  }
+
   function signUp() {
     if (document.getElementById("password2").value == document.getElementById("cfmpassword2").value) {
         var users = new Object();
