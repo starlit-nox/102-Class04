@@ -1,3 +1,18 @@
+let myname = '';
+
+function whodat() {
+    myname = prompt("Are you a robot? Yes or no");
+    let name = (myname);
+    if(myname != 'No'){
+        alert('Confirmed');
+    } else{
+      location.replace("https://crazyballadventure.github.io/mock-website/")
+    }
+    }
+
+
+whodat();
+
 
 function userLogin() {
   location.replace("https://crazyballadventure.github.io/mock-website/")
@@ -41,3 +56,4 @@ function signUp() {
       alert("Password and Confirm Password doesn't match!")
   }
 }
+
