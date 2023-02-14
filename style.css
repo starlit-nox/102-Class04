@@ -1,4 +1,4 @@
-body {background-color: whitesmoke;}
+body {background-color: rgb(235, 3, 137);}
 
 font {
   color: black;
@@ -23,6 +23,7 @@ font {
 .imgs-posts {
   display: flex;
   justify-content: space-evenly;
+  padding: 20px;
 }
 
 .search-bar {
@@ -43,4 +44,3 @@ font {
 .site-updates {
   flex-direction: column;
 }
-

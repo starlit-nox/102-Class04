@@ -57,3 +57,12 @@ function signUp() {
   }
 }
 
+
+let userAns = "";
+
+function rating(){
+  let userAns = prompt("How would you rate my webpage 1-5?");
+  for(let x = 0; x < userAns; x++){
+    document.getElementById("thisPar").innerHTML += "<img src = https://cdn.discordapp.com/attachments/1069674123128733858/1075153523710361652/image.png>"
+  }
+}
